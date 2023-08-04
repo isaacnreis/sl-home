@@ -21,8 +21,14 @@
 *{
   box-sizing: border-box;
   font-family: 'Noto Sans', sans-serif;
-  padding: 0;
-  margin: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
 .container{
@@ -31,12 +37,25 @@
   max-width: 1920px;
 }
 
+.botao{
+  background: var(--var-cor-amarelo);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  color: var(--var-cor-azul);
+  cursor: pointer;
+  filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.35));
+  font-weight: 500; 
+  text-transform: uppercase;
+  padding: 0.85rem 1.25rem;
+}
+
 .logo{
   height: 10rem;
   height: 10rem;
 }
 
-header{
+.cabecalho{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -53,7 +72,6 @@ header{
 
 .cabecalho__link:hover:not(:last-child){
   color: var(--var-cor-laranja);
-  border-bottom: 1px solid var(--var-cor-azul);
 }
 
 .cabecalho__wpp{
@@ -61,4 +79,43 @@ header{
   border-radius: 1.25rem;
   color: var(--var-cor-branco);
   padding: 1rem;
+}
+
+.banner{
+  color: white;
+  background: linear-gradient(0deg, rgba(33, 41, 105, 0.60) 0%, rgba(33, 41, 105, 0.70) 100%), center / cover no-repeat url('../img/bgBannerGif.gif'), lightgray 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  height: 82vh;
+  width: 100vw;
+}
+
+.banner__titulo{
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-variant: all-small-caps; 
+}
+
+.banner__subtitulo{
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
+}
+
+.banner__texto{
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; 
+}
+
+.banner .banner__botao{
+  font-size: 1.5rem;
+  margin-top: 2rem;
 }
