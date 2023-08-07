@@ -136,7 +136,7 @@
 .links{
   display: flex;
   height: auto;
-  margin: 2rem 0;
+  margin: 2rem 0 6rem 0;
   justify-content: space-between;
 }
 
@@ -158,4 +158,14 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal; 
+}
+
+.comoFunciona{
+  background: var(--var-cor-azul);
+  text-align: center;
+}
+
+.comoFunciona__bg{
+  margin: 0 auto;  
+  height: 100vh;
 }
