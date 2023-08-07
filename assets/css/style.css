@@ -68,6 +68,24 @@
   height: 10rem;
 }
 
+.tituloH2{
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.tituloH3{
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; 
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .cabecalho{
   display: flex;
   flex-direction: row;
@@ -168,4 +186,61 @@
 .comoFunciona__bg{
   margin: 0 auto;  
   height: 100vh;
+}
+
+.servico__img--PH{
+  background: center / cover no-repeat url('../img/ph.jpg');
+  height: 300px;
+  width: 100%;
+}
+.servico__img--INS{
+  background: center / cover no-repeat url('../img/ins.jpg');
+  height: 300px;
+  width: 100%;
+}
+.servico__img--OP{
+  background: center / cover no-repeat url('../img/om.jpg');
+  height: 300px;
+  width: 100%;
+}
+
+.servicos{
+  margin: 4rem 0;
+}
+
+.servicos__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.servicos__titulo{
+  color: var(--var-cor-azul);
+  margin-bottom: 2rem;
+}
+
+.servico{
+  align-items: center;
+  background: var(--azul, #212969);
+  border-radius: 10px;
+  color: var(--var-cor-branco);
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  height: 784px;
+  width: 446.459px;
+}
+
+.servico__titulo{
+  color: var(--var-cor-amarelo);
+}
+
+.servico__lista{
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 400; 
+}
+
+.servico__botao{
+  font-size: 1.5rem;
 }
