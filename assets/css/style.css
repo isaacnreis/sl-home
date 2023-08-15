@@ -226,9 +226,10 @@
   color: var(--var-cor-branco);
   display: flex;
   flex-direction: column;
-  gap: 4rem;
-  height: 784px;
-  width: 446.459px;
+  justify-content: space-between;
+  padding-bottom: 6rem;
+  gap: 2rem;
+  width: calc(33.33% - 2rem);
 }
 
 .servico__titulo{
@@ -242,6 +243,7 @@
 }
 
 .servico__botao{
+  margin-top: 2rem;
   font-size: 1.5rem;
 }
 
@@ -249,12 +251,13 @@
   background: linear-gradient(0deg, rgba(33, 41, 105, 0.45) 0%, rgba(33, 41, 105, 0.45) 100%), url('../img/bgProjetos.jpg'), lightgray 50% / cover no-repeat;
 }
 
-.projetos__container{
-  padding: 4rem 0 6rem 0;
-}
-
 .projetos__titulo{
   color: var(--var-cor-branco);
+  padding-top: 4rem;
+}
+
+.projetos__container{
+  padding: 4rem 0 6rem 0;
 }
 
 .projeto{
