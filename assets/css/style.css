@@ -328,3 +328,69 @@
   font-size: 1.5rem;
   font-weight: 700; 
 }
+
+.simulador{
+  align-items: center;
+  background: linear-gradient(0deg, rgba(18, 25, 83, 0.45) 0%, rgba(18, 25, 83, 0.45) 100%), url("../img/bgSimulador.jpg"), lightgray 50% / cover no-repeat;
+  color: var(--var-cor-branco);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.simulador__descricao{
+  text-align: center;
+  width: 60%;
+}
+
+.simulador__form{
+  background: var(--var-cor-azul);
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+.simulador__label{
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal; 
+}
+
+.simulador__input{
+  display: flex;
+  flex-direction: column;
+}
+
+.simulador__radio{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+#nomeSimulador, #emailSimulador{
+  border: none;
+  border-radius: 0.625rem;
+  padding: 0.5rem;
+  outline: none;
+  margin-top: 0.25rem;
+}
+
+.simulador__termos{
+  font-size: 0.825rem;
+}
+
+.simulador__botao{
+  align-self: center;
+  margin-top: 4rem;
+  width: 50%;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal; 
+}
