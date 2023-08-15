@@ -244,3 +244,42 @@
 .servico__botao{
   font-size: 1.5rem;
 }
+
+.projetos{
+  background: linear-gradient(0deg, rgba(33, 41, 105, 0.45) 0%, rgba(33, 41, 105, 0.45) 100%), url('../img/bgProjetos.jpg'), lightgray 50% / cover no-repeat;
+}
+
+.projetos__container{
+  padding: 4rem 0 6rem 0;
+}
+
+.projetos__titulo{
+  color: var(--var-cor-branco);
+}
+
+.projeto{
+  background: var(--var-cor-branco);
+  border-radius: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  text-align: center;
+  height: 100%;
+  width: calc(33.33% - 2rem);
+  padding-bottom: 0.625rem;
+}
+
+.projeto__img{
+  width: 100%;
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+
+.projeto__tipo{
+  color: var(--var-cor-laranja);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.projeto__localidade{
+  color: var(--var-cor-azul);
+}
