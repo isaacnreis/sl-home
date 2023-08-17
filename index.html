@@ -86,7 +86,7 @@
       <div class="links__card">
         <i class="icon-cifrao fa"></i>
         <h3 class="links__titulo">Simulador</h3>
-        <a href="" class="botao">Veja mais</a>
+        <a href="#simulador" class="botao">Veja mais</a>
       </div>
       <div class="links__card">
         <i class="icon-cafe fa"></i>
@@ -96,7 +96,7 @@
       <div class="links__card">
         <i class="icon-ferramenta fa"></i>
         <h3 class="links__titulo">Serviços</h3>
-        <a href="" class="botao">Veja mais</a>
+        <a href="#servicos" class="botao">Veja mais</a>
       </div>
     </section>
 
@@ -107,7 +107,7 @@
       <img class="comoFunciona__bg" src="./assets/img/ComoFuncionaAEnergiaSolar.png" alt="">
     </section>
 
-    <section class="servicos container">
+    <section class="servicos container" id="servicos">
       <h2 class="servicos__titulo tituloH2">Serviços</h2>
       <div class="servicos__container">
         <article class="servico">
@@ -177,7 +177,7 @@
 
     </section>
 
-    <section class="simulador container">
+    <section class="simulador container" id="simulador">
       <h2 class="simulador__titulo tituloH2">Simulador</h2>
       <p class="simulador__descricao">Simule agora para saber quanto você pode economizar utilizando a energia solar</p>
       <form class="simulador__form">
@@ -219,6 +219,46 @@
         <p class="simulador__termos">Ao informar os meus dados, concordo com os termos de Politica de Privacidade</p>
         <button type="submit" class="botao simulador__botao">Simular</button>
       </form>
+    </section>
+
+    <section class="duvidas container">
+      <h2 class="duvidas__titulo tituloH2">Dúvidas frequentes</h2>
+      <div class="duvidas__container">
+        <div class="duvidas__perguntas">
+          <details class="duvidas__caixa" close>
+            <summary class="duvidas__pergunta">Posso compensar os créditos de energia em outro endereço?</summary>
+            <p class="duvidas__resposta">R: Podem sim, desde que os imóveis estejam todos no mesmo CPF ou CNPJ.</p>
+          </details>
+          <details class="duvidas__caixa" close>
+            <summary class="duvidas__pergunta">Quanto posso economizar na conta de energia?</summary>
+            <p class="duvidas__resposta">R: É possível economizar até 95% do custo da fatura. Com a geração paga-se apenas algumas taxas como a taxa de disponibilidade e a taxa de iluminação pública.</p>
+          </details>
+          <details class="duvidas__caixa" close>
+            <summary class="duvidas__pergunta">Qual a durabilidade do sistema?</summary>
+            <p class="duvidas__resposta">R: O sistema fotovoltaico tem vida útil de 25 a 30 anos, mas com a manutenção correta pode durar muito mais.</p>
+          </details>
+          <details class="duvidas__caixa" close>
+            <summary class="duvidas__pergunta">É possível financiar o sistema?</summary>
+            <p class="duvidas__resposta">R: Sim, atualmente existem diversas linhas de financiamento onde as parcelas ficam igual ou menor ou valor da conta de energia.</p>
+          </details>
+          <details class="duvidas__caixa" close>
+            <summary class="duvidas__pergunta">O sistema de energia solar funciona durante dias nublados ou chuvosos?</summary>
+            <p class="duvidas__resposta">R: Sim, mesmo em dias nublados ou chuvosos o sistema continua a gerando porém com uma pequena redução.</p>
+          </details>
+        </div>
+        <div class="duvidas__naoSolucionou">
+          <div class="duvidas__conteinerTitulo">
+            <h3 class="duvidas__formTitulo tituloH3">Não solucionou sua dúvida?</h3>
+          </div>
+          <form class="duvidas__form">
+            <input type="text" placeholder="Nome">
+            <input type="email" placeholder="Email">
+            <input type="tel" placeholder="Telefone (xx) x xxxx-xxxx">
+            <textarea type="text" placeholder="Mensagem"></textarea>
+            <button type="submit" class="botao duvidas__botaoForm">Enviar</button>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 
