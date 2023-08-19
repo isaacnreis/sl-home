@@ -289,6 +289,24 @@
         <button type="submit" class="botao">Enviar</button>
       </form>
     </section>
+
+    <section class="orcamento container">
+      <h2 class="tituloH2 orcamento__titulo">Solicite um orçamento</h2>
+      <form class="orcamento__form">
+        <div class="orcamento__formInputContainer">
+          <input type="text" name="nomeOrcamento" id="nomeOrcamento" placeholder="Nome" required>
+          <input type="email" name="emailOrcamento" id="emailOrcamento" placeholder="Email" required>
+        </div>
+        <div class="orcamento__formInputContainer">
+          <input type="tel" name="telOrcamento" id="telOrcamento" placeholder="Telefone" required>
+          <input type="text" name="cidadeOrcamento" id="cidadeOrcamento" placeholder="Cidade" required>
+        </div>
+        <input type="text" name="consumoOrcamento" id="consumoOrcamento" placeholder="Consumo mensal" required>
+        <p class="orcamento__descricaoConsumo">Soma do consumo dos últimos 12 meses em kwh dividido por 12 (Dados presentes na conta de energia)</p>
+        <textarea name="comentatiosOrcamento" id="comentatiosOrcamento" cols="30" rows="10" placeholder="Comentários"></textarea>
+        <button type="submit" class="botao orcamento__botao">Enviar</button>
+      </form>
+    </section>
   </main>
 
   
