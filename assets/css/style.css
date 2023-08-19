@@ -526,3 +526,45 @@
   margin: 0 auto;
   padding: 0.825rem 2.5rem;
 }
+
+.newsletter {
+  background: linear-gradient(0deg, rgba(33, 41, 105, 0.45) 0%, rgba(33, 41, 105, 0.45) 100%), fixed bottom url("../img/bgNew.jpeg"), lightgray 50% / cover no-repeat;
+  color: var(--var-cor-branco);
+  text-align: center;
+  padding: 2rem;
+}
+
+.newsletter__anuncio {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
+}
+
+.newsletter__container {
+  border-top: 2px solid var(--var-cor-branco);
+  margin: 1rem auto;
+  padding-top: 1rem;
+  width: 50%;
+}
+
+.newsletter__titulo {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; 
+}
+
+.newsletter__descricao {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; 
+}
+
+.newsletter__form input {
+  border: none;
+  padding: 0.825rem 8rem 0.825rem 0.825rem;
+  border-radius: 0.625rem;
+  margin-right: 1.5rem;
+}
