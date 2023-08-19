@@ -30,6 +30,31 @@
   background: center / contain no-repeat url('../img/icon-ferramenta.svg');
 }
 
+.fa-mail {
+  background: center / contain no-repeat url('../img/fa-mail.svg');
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.fa-tel {
+  background: center / contain no-repeat url('../img/fa-tel.svg');
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.fa-instagram {
+  background: center / contain no-repeat url('../img/fa-instagram.svg');
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-right: 1rem;
+}
+
+.fa-facebook {
+  background: center / contain no-repeat url('../img/fa-facebook.svg');
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Noto Sans', sans-serif;
@@ -104,6 +129,7 @@
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
+  transition: 0.2s all ease-in-out;
 }
 
 .cabecalho__link:hover:not(:last-child) {
@@ -623,4 +649,67 @@
   border-radius: 0.625rem;
   color: var(--var-cor-branco);
   font-size: 1.5rem;
+}
+
+.rodape {
+  background: linear-gradient(0deg, rgba(33, 41, 105, 0.35) 0%, rgba(33, 41, 105, 0.35) 100%), url("../img/bgRodape.png"), lightgray 50% / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rodape__container {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 2rem 0 4rem 0;
+}
+
+.rodape__nav {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 30%;
+}
+
+.rodape__borda {
+  border-right: 2px solid var(--var-cor-branco);
+}
+
+.rodape__link {
+  color: var(--var-cor-branco);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.2s all ease-in-out;
+}
+
+.rodape__link:hover {
+  color: var(--var-cor-laranja);
+}
+
+.rodape__contato {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  width: 30%;
+}
+
+.rodape__email, .rodape__tel {
+  color: var(--var-cor-branco);
+  transition: 0.2s all ease-in-out;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+.rodape__social {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.rodape__copy {
+  color: var(--var-cor-branco);
+  padding-bottom: 2rem;
 }
