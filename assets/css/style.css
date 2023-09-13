@@ -1379,9 +1379,62 @@
 
   .newsletter__anuncio:last-child {
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 400;
     width: 100%;
     margin-top: 0.5rem;
+  }
+  
+  .newsletter__botao {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .orcamento__form {
+    width: 100%;
+  }
+
+  .orcamento__formInputContainer {
+    flex-direction: column;
+  }
+
+  .orcamento__form input, .orcamento__form textarea {
+    padding: 1.5rem;
+  }
+
+  #nomeOrcamento, #cidadeOrcamento {
+    width: 100%;
+  }
+  
+  #emailOrcamento, #telOrcamento {
+    width: 100%;
+  }
+
+  .orcamento__botao {
+    margin: 0 auto;
+    width: 35%;
+  }
+
+  .rodape__container {
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 1rem 0 3rem 0;
+  }
+
+  .rodape__borda {
+    border-top: 1.5px solid var(--var-cor-branco);
+    border-right: 0;
+    width: 70%;
+  }
+
+  .rodape__contato {
+    text-align: center;
+  }
+
+  .rodape__copy {
+    font-size: 0.875rem;
+    text-align: center;
+    padding-top: 1rem;
   }
 }
 
@@ -1391,4 +1444,14 @@
     padding-right: 0.5rem;
   }
   
+}
+
+@media screen and (max-height: 740px) {
+  .banner {
+    height: 80vh;
+  }
+  
+  .banner__titulo {
+    margin-top: 4rem;
+  }
 }
