@@ -52,8 +52,8 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
   <!-- Meu CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -66,7 +66,22 @@
       <a href="#blog" class="cabecalho__link">Blog</a>
       <a href="#quemSomos" class="cabecalho__link">Quem somos</a>
       <a href="#contato" class="cabecalho__link">Contato</a>
-      <a href="https://web.whatsapp.com/send?phone=5531993600722" class="cabecalho__link cabecalho__wpp"> <i class="fa fa-wpp"> </i>(31) 9 9360-0722</a>
+      <a href="https://web.whatsapp.com/send?phone=5531993600722" target="_blank" class="cabecalho__link cabecalho__wpp"> <i class="fa fa-wpp"> </i>(31) 9 9360-0722</a>
+    </nav>
+    <nav class="cabecalho__navMobile">
+      <a href="https://web.whatsapp.com/send?phone=5531993600722" target="_blank" class="cabecalho__link cabecalho__wpp"> <i class="fa fa-wpp"> </i></a>
+      <svg class="cabecalho__navMobileMenu fa-menu" xmlns="http://www.w3.org/2000/svg" width="38" height="39" viewBox="0 0 38 39" fill="none">
+        <path d="M33.25 16.3334H4.75" stroke="#212969" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M33.25 10H4.75" stroke="#212969" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M33.25 22.6666H4.75" stroke="#212969" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M33.25 29H4.75" stroke="#212969" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <ul class="show-cabecalho__navMobile">
+        <li><a href="./index.html" class="cabecalho__link">Inicio</a></li>
+        <li><a href="#blog" class="cabecalho__link">Blog</a></li>
+        <li><a href="#quemSomos" class="cabecalho__link">Quem somos</a></li>
+        <li><a href="#contato" class="cabecalho__link">Contato</a></li>
+      </ul>
     </nav>
   </header>
 
@@ -101,6 +116,7 @@
     </section>
 
     <section class="proposito">
+      <h2 class="tituloH2">Propósito</h2>
     </section>
 
     <section class="comoFunciona">
@@ -274,6 +290,10 @@
       <a href="#" class="botao blog__link">Veja mais</a>
     </section>
 
+    <section class="quemSomos container">
+      <h2 class="tituloH2">Quem somos</h2>
+    </section>
+
     <section class="newsletter container">
       <div>
         <h3 class="newsletter__anuncio">Santo Solar</h3>
@@ -309,7 +329,7 @@
     </section>
   </main>
 
-  <footer class="rodape container">
+  <footer class="rodape">
     <a href="./index.html"><img src="./assets/img/LogoSemFundo.png" alt="Logo Santo Solar" class="logo"></a>
     <section class="rodape__container">
       <nav class="rodape__nav">
