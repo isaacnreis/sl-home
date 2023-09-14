@@ -141,6 +141,7 @@
 }
 
 .cabecalho__wpp {
+  align-self: center;
   background: #0FA958;
   border-radius: 1.25rem;
   color: var(--var-cor-branco);
@@ -181,7 +182,7 @@
   font-weight: 700;
   line-height: normal;
   width: 60%;
-  margin: 8rem auto 0 auto;
+  margin: 6rem auto 0 auto;
 }
 
 .banner .banner__botao {
@@ -720,6 +721,31 @@
   padding-bottom: 2rem;
 }
 
+.whatsappBotaoFlutuante {
+  display: flex;
+  position: fixed;
+  bottom: 2rem;
+  right: 0.5rem;
+  z-index: 1;
+  width: 7.5vw;
+  height: 7.5vh;
+}
+
+.whatsappBotaoFlutuante img {
+  width: 100%;
+  height: 100%;
+}
+
+.whatsappBotaoFlutuante svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(90deg);
+}
+
+.whatsappBotaoFlutuante svg path {
+  stroke: var(--var-cor-laranja);
+}
+
 @media screen and (max-width: 1290px) {
   .container {
     padding-left: 6rem;
@@ -834,7 +860,7 @@
   }
   
   .newsletter__form input {
-    padding: 1rem 8rem 1rem 1rem;
+    padding: 1rem 6rem 1rem 1rem;
   }
   
   .orcamento__form {
@@ -954,6 +980,11 @@
     padding: 0.5rem 0.825rem;
     width: 40%;
   }
+
+  .whatsappBotaoFlutuante {
+    width: 10vw;
+    height: 10vh;
+  }
    
 }
 
@@ -961,6 +992,11 @@
   .container {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .logo {
+    height: 7rem;
+    height: 7rem;
   }
 
   .tituloH2 {
@@ -1090,6 +1126,10 @@
     padding-right: 1.5rem;
   }
 
+  .cabecalho {
+    height: 15vh;
+  }
+
   .cabecalho__wpp {
     border-radius: 1.25rem;
     padding: 0.5rem 0.825rem;
@@ -1140,7 +1180,7 @@
   .banner__texto {
     font-size: 1.25rem;
     width: 70%;
-    margin: 6rem auto 0 auto;
+    margin: 5rem auto 0 auto;
   }
   
   .banner .banner__botao {
@@ -1232,10 +1272,15 @@
   
   .simulador__botao {
     margin-top: 1.5rem;
-    width: 35%;
+    width: auto;
     padding: 0.825rem 2rem;
     font-size: 1.125rem;
     font-weight: 400;
+  }
+
+  .whatsappBotaoFlutuante {
+    width: 14vw;
+    height: 14vh;
   }
 }
 
@@ -1243,6 +1288,11 @@
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .logo {
+    height: 6rem;
+    height: 6rem;
   }
 
   .show-cabecalho__navMobile {
@@ -1436,6 +1486,22 @@
     text-align: center;
     padding-top: 1rem;
   }
+
+  .whatsappBotaoFlutuante {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .cabecalho__link {
+    margin: 0;
+    font-size: 0.875rem;
+  }
+  
+  .logo {
+    height: 5rem;
+    height: 5rem;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -1443,15 +1509,55 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
+
+  .show-cabecalho__navMobile {
+    gap: 1rem;
+  }
+
+  .cabecalho__wpp {
+    padding: 0.5rem;
+  }
+  
+}
+
+@media screen and (max-width: 300px) {
+  .banner {
+    height: 75vh !important;
+  }
+
+  .show-cabecalho__navMobile {
+    gap: 0.5rem;
+  }
+
+  .cabecalho__link {
+    font-size: 0.75rem;
+  }
+
+  .banner__titulo {
+    font-size: 2.5rem;
+  }
+
+  .banner__subtitulo {
+    font-size: 1.25rem;
+  }
+
+  .banner__texto {
+    font-size: 0.875rem;
+  }
   
 }
 
 @media screen and (max-height: 740px) {
   .banner {
-    height: 80vh;
+    height: 90vh;
   }
   
   .banner__titulo {
     margin-top: 4rem;
+  }
+
+  .show-cabecalho__navMobile {
+    position: absolute;
+    bottom: calc(100vh - 15vh);
   }
 }

@@ -59,13 +59,13 @@
 
 </head>
 <body>
-  <header class="cabecalho container">
+  <header class="cabecalho container" id="cabecalho">
     <a href="./index.html"><img src="./assets/img/LogoSemFundo.png" alt="Logo Santo Solar" class="logo"></a>
     <nav class="cabecalho__nav">
       <a href="./index.html" class="cabecalho__link">Inicio</a>
       <a href="#blog" class="cabecalho__link">Blog</a>
       <a href="#quemSomos" class="cabecalho__link">Quem somos</a>
-      <a href="#contato" class="cabecalho__link">Contato</a>
+      <a href="#rodape" class="cabecalho__link">Contato</a>
       <a href="https://web.whatsapp.com/send?phone=5531993600722" target="_blank" class="cabecalho__link cabecalho__wpp"> <i class="fa fa-wpp"> </i>(31) 9 9360-0722</a>
     </nav>
     <nav class="cabecalho__navMobile">
@@ -80,13 +80,13 @@
         <li><a href="./index.html" class="cabecalho__link">Inicio</a></li>
         <li><a href="#blog" class="cabecalho__link">Blog</a></li>
         <li><a href="#quemSomos" class="cabecalho__link">Quem somos</a></li>
-        <li><a href="#contato" class="cabecalho__link">Contato</a></li>
+        <li><a href="#rodape" class="cabecalho__link">Contato</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="banner">
+    <section class="banner" id="banner">
       <header>
         <h1 class="banner__titulo">Santo Solar</h1>
         <h2 class="banner__subtitulo">Transforme a luz do sol em economia</h2>
@@ -176,7 +176,7 @@
       <div class="depoimentos__container">
         <button class="seta-esquerda">
           <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M41 12L22.5 30.5L41 49" stroke="#212969" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M41 12L22.5 30.5L41 49" stroke="#212969" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
         <div class="depoimento">
@@ -186,7 +186,7 @@
         </div>
         <button class="seta-direita">
           <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M41 12L22.5 30.5L41 49" stroke="#212969" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M41 12L22.5 30.5L41 49" stroke="#212969" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
       </div>
@@ -277,7 +277,7 @@
       </div>
     </section>
 
-    <section class="blog container">
+    <section class="blog container" id="blog">
       <h2 class="blog__titulo tituloH2">Blog</h2>
       <p class="blog__descricao">Acompanhe as novidades da Santo Solar</p>
       <section class="blog__container">
@@ -290,7 +290,7 @@
       <a href="#" class="botao blog__link">Veja mais</a>
     </section>
 
-    <section class="quemSomos container">
+    <section class="quemSomos container" id="quemSomos">
       <h2 class="tituloH2">Quem somos</h2>
     </section>
 
@@ -329,14 +329,14 @@
     </section>
   </main>
 
-  <footer class="rodape">
+  <footer class="rodape" id="rodape">
     <a href="./index.html"><img src="./assets/img/LogoSemFundo.png" alt="Logo Santo Solar" class="logo"></a>
     <section class="rodape__container">
       <nav class="rodape__nav">
         <a href="./index.html" class="rodape__link">Inicio</a>
         <a href="#blog" class="rodape__link">Blog</a>
         <a href="#quemSomos" class="rodape__link">Quem somos</a>
-        <a href="#contato" class="rodape__link">Contato</a>
+        <a href="#rodape" class="rodape__link">Contato</a>
       </nav>
       <div class="rodape__borda"></div>
       <div class="rodape__contato">
@@ -358,6 +358,17 @@
       </div>
     </section>
   </footer>
+
+  <div class="whatsappBotaoFlutuante">
+    <a href="https://web.whatsapp.com/send?phone=5531993600722" target="_blank" rel="noopener noreferrer">
+      <img src="./assets/img/whatsapp-icone.svg" alt="ícone whatsapp. Clique aqui para iniciar uma conversa no whatsapp.">
+    </a>
+    <a href="#cabecalho">
+      <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M41 12L22.5 30.5L41 49" stroke="#212969" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
 
   <!-- Meu JS -->
   <script src="./assets/js/script.js"></script>
