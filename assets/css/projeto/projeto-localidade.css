@@ -1,0 +1,9 @@
+.projeto__localidade {
+  color: var(--var-cor-azul);
+}
+
+@media screen and (max-width: 1290px) {
+  .projeto__localidade {
+    font-size: 1.125rem;
+  }
+}

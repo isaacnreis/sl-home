@@ -1,0 +1,16 @@
+.rodape__container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  width: 100%;
+  margin: 2rem 0 4rem 0;
+}
+
+@media screen and (max-width: 560px) {
+  .rodape__container {
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 1rem 0 3rem 0;
+  }
+}

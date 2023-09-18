@@ -1,0 +1,48 @@
+.duvidas__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem 2.5rem;
+}
+
+.duvidas__form input, .duvidas__form textarea {
+  border: 2px solid rgba(15, 10, 10, 0.40); 
+  border-radius: 0.625rem;  
+  outline: none;
+  padding: 0.5rem 0.5rem;
+}
+
+.duvidas__form textarea {
+  resize: none;
+  height: 100px;
+}
+
+@media screen and (max-width: 1290px) {
+  .duvidas__form {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .duvidas__form {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .duvidas__form {
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .duvidas__form {
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .duvidas__form input, .duvidas__form textarea {
+    padding: 1rem;
+  }
+}

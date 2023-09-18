@@ -1,0 +1,27 @@
+.servico__lista {
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 400; 
+}
+
+@media screen and (max-width: 1290px) {
+  .servico__lista {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {  
+  .servico__lista {
+     font-size: 1rem;
+     font-weight: 300;
+     padding: 0 1.5rem;
+   }
+}
+
+@media screen and (max-width: 768px) { 
+  .servico__lista {
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0 1rem;
+  }
+}

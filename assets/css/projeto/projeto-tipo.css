@@ -1,0 +1,5 @@
+.projeto__tipo {
+  color: var(--var-cor-laranja);
+  font-weight: 500;
+  text-transform: uppercase;
+}

@@ -1,0 +1,26 @@
+.duvidas__botaoForm {
+  align-self: center;
+  font-size: 1.125rem;
+  width: 50%;
+}
+
+@media screen and (max-width: 1290px) {
+  .duvidas__botaoForm {
+    padding: 0.5rem 0.825rem;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .duvidas__botaoForm {
+    padding: 0.5rem 0.825rem;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .duvidas__botaoForm {
+    padding: 0.25rem 0.5rem;
+    width: 50%;
+  }
+}

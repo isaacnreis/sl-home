@@ -1,0 +1,17 @@
+.simulador__form {
+  background: var(--var-cor-azul);
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 768px) { 
+  .simulador__form {
+    background: none;
+    border: 1px solid var(--var-cor-branco);
+    gap: 1.5rem;
+  }
+}

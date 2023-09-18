@@ -1,0 +1,29 @@
+.duvidas__perguntas {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 60%;
+}
+
+.duvidas__pergunta::marker {
+  color: var(--var-cor-amarelo);
+}
+
+@media screen and (max-width: 1290px) {
+  .duvidas__perguntas {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {  
+  .duvidas__perguntas {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .duvidas__perguntas {
+    gap: 1.5rem;
+    width: 100%;
+  }
+}

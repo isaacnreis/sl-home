@@ -1,0 +1,65 @@
+.fa {
+    display: inline-block;
+    height: 4.375rem;
+    width: 4.375rem;
+    vertical-align: middle;
+  } 
+  
+  .fa-wpp {
+    background: center / contain no-repeat url('../img/fa-wpp.svg');
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-right: 0.5rem;
+  }
+  
+  .icon-cifrao {
+    background: center / contain no-repeat url('../img/icon-cifrao.svg');
+  }
+  .icon-cafe {
+    background: center / contain no-repeat url('../img/icon-cafe.svg');
+  }
+  .icon-ferramenta {
+    background: center / contain no-repeat url('../img/icon-ferramenta.svg');
+  }
+  
+  .fa-mail {
+    background: center / contain no-repeat url('../img/fa-mail.svg');
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .fa-tel {
+    background: center / contain no-repeat url('../img/fa-tel.svg');
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .fa-instagram {
+    background: center / contain no-repeat url('../img/fa-instagram.svg');
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-right: 1rem;
+  }
+  
+  .fa-facebook {
+    background: center / contain no-repeat url('../img/fa-facebook.svg');
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .seta-esquerda, .seta-direita {
+    border: none;
+    background: none;
+    cursor: pointer;
+    transform: rotate(0deg);
+  }
+  
+  .seta-direita {
+    transform: rotate(180deg);
+  }
+
+  @media screen and (max-width: 768px) { 
+    .fa-wpp {
+        margin-right: 0;
+    }
+  }

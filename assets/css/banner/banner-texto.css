@@ -1,0 +1,52 @@
+.banner__texto {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 60%;
+  margin: 6rem auto 0 auto;
+}
+
+@media screen and (max-width: 1024px) {  
+  .banner__texto {
+    font-size: 1.25rem;
+    width: 60%;
+    margin: 4.5rem auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .banner__texto {
+    font-size: 1.25rem;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner__texto {
+    font-size: 1.25rem;
+    width: 70%;
+    margin: 5rem auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .banner__texto {
+    margin: 4rem auto 0 auto;
+    font-size: 1rem;
+    font-weight: 400;
+    width:90%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .banner__texto {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .banner__texto {
+    margin: 2rem auto 0 auto;
+  }
+}

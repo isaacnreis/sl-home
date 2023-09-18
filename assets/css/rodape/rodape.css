@@ -1,0 +1,7 @@
+.rodape {
+  background: linear-gradient(0deg, rgba(33, 41, 105, 0.35) 0%, rgba(33, 41, 105, 0.35) 100%), url("../../img/bgRodape.png"), lightgray 50% / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

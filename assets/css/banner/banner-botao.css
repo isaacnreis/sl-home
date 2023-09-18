@@ -1,0 +1,39 @@
+.banner .banner__botao {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  padding: 0.5rem 2rem;
+}
+
+@media screen and (max-width: 1024px) {  
+  .banner .banner__botao {
+    font-size: 1.25rem;
+    margin-top: 2.5rem;
+    padding: 0.5rem 2.25rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .banner .banner__botao {
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner .banner__botao {
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .banner .banner__botao {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .banner__botao {
+    margin-top: 2rem;
+  }
+}

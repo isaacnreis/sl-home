@@ -1,0 +1,20 @@
+.cabecalho__wpp {
+  align-self: center;
+  background: #0FA958;
+  border-radius: 1.25rem;
+  color: var(--var-cor-branco);
+  padding: 0.4rem 1rem 0.6rem 1rem ;
+}
+
+@media screen and (max-width: 768px) {
+  .cabecalho__wpp {
+    border-radius: 1.25rem;
+    padding: 0.5rem 0.825rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .cabecalho__wpp {
+    padding: 0.5rem;
+  }
+}

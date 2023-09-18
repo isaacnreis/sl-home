@@ -1,0 +1,5 @@
+.blog {
+  background: fixed bottom url("../../img/bgBlog.jpg"), lightgray 50% / cover no-repeat;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}

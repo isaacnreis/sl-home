@@ -1,0 +1,9 @@
+.servicos {
+  margin: 4rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .servicos {
+    margin: 2.5rem 0;
+  }
+}

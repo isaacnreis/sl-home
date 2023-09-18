@@ -1,0 +1,50 @@
+.orcamento__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem auto 0 auto;
+  width: 50%;
+}
+
+.orcamento__form input, .orcamento__form textarea {
+  border: none;
+  border-radius: 0.625rem;
+  padding: 0.825rem 1rem;
+}
+
+#nomeOrcamento, #cidadeOrcamento {
+  width: 50%;
+}
+
+#emailOrcamento, #telOrcamento {
+  width: 45%;
+}
+
+@media screen and (max-width: 1290px) {
+  .orcamento__form {
+    gap: 1.25rem;
+    width: 80%;
+  }
+  
+  .orcamento__form input, .orcamento__form textarea {
+    padding:1rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .orcamento__form {
+    width: 100%;
+  }
+
+  .orcamento__form input, .orcamento__form textarea {
+    padding: 1.5rem;
+  }
+
+  #nomeOrcamento, #cidadeOrcamento {
+    width: 100%;
+  }
+  
+  #emailOrcamento, #telOrcamento {
+    width: 100%;
+  }
+}

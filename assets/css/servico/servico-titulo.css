@@ -1,0 +1,29 @@
+.servico__titulo {
+  color: var(--var-cor-amarelo);
+}
+
+@media screen and (max-width: 1290px) {
+  .servico__titulo {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {  
+  .servico__titulo {
+    font-size: 1.25rem;
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) { 
+  .servico__titulo {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .servico__titulo {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}

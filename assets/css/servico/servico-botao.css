@@ -1,0 +1,30 @@
+.servico__botao {
+  margin: 2rem 0.5rem 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1290px) {
+  .servico__botao {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {  
+  .servico__botao {
+    font-size: 1rem;
+  } 
+}
+
+@media screen and (max-width: 768px) { 
+  .servico__botao {
+    margin: 1rem 0.5rem 0 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .servico__botao {
+    padding: 1rem 2rem !important;
+    font-size: 1rem;
+  }
+}

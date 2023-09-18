@@ -1,0 +1,10 @@
+.blog__tituloArtigo {
+  color: var(--var-cor-azul);
+}
+
+@media screen and (max-width: 1290px) {
+  .blog__tituloArtigo {
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+}

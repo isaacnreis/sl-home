@@ -1,0 +1,11 @@
+.projetos__titulo {
+  color: var(--var-cor-branco);
+  padding-top: 4rem;
+}
+
+@media screen and (max-width: 560px) {
+  .projetos__titulo {
+    color: var(--var-cor-branco);
+    padding-top: 2rem;
+  }
+}

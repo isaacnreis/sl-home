@@ -1,0 +1,12 @@
+.simulador__descricao {
+  text-align: center;
+  width: 60%;
+}
+
+@media screen and (max-width: 768px) { 
+  .simulador__descricao {
+    margin: 1rem 0 2rem 0;
+    font-weight: 300;
+    width: 100%;
+  }
+}

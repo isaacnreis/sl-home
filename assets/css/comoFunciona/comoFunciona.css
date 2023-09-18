@@ -1,0 +1,24 @@
+.comoFunciona {
+  background: var(--var-cor-azul);
+  text-align: center;
+}
+
+.comoFunciona__bg {
+  margin: 0 auto;  
+  height: 100vh;
+  padding-bottom: 4rem;
+}
+
+@media screen and (max-width: 1290px) {
+  .comoFunciona__bg {
+    margin: 0 auto;  
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {  
+  .comoFunciona__bg {
+    width: 100%;
+    height: auto;
+  }
+}

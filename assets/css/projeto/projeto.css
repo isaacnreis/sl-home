@@ -1,0 +1,17 @@
+.projeto {
+  background: var(--var-cor-branco);
+  border-radius: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  text-align: center;
+  height: 100%;
+  width: calc(33.33% - 2rem);
+  padding-bottom: 0.625rem;
+}
+
+@media screen and (max-width: 560px) {
+  .projeto {
+    width: 100%;
+  }
+}

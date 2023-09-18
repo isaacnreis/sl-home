@@ -1,0 +1,13 @@
+.blog__link {
+  display: table;
+  margin: 0 auto;
+  padding: 0.825rem 2.5rem;
+}
+
+@media screen and (max-width: 560px) {
+  .blog__link {
+    display: table;
+    margin: 0 auto;
+    padding: 0.825rem 2.5rem;
+  }
+}

@@ -1,0 +1,28 @@
+.simulador__botao {
+  align-self: center;
+  margin-top: 4rem;
+  width: 50%;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal; 
+}
+
+@media screen and (max-width: 1290px) {
+  .simulador__botao {
+    margin-top: 2rem;
+    width: 40%;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 768px) { 
+  .simulador__botao {
+    margin-top: 1.5rem;
+    width: auto;
+    padding: 0.825rem 2rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+}

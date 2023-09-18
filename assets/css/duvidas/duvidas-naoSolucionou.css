@@ -1,0 +1,29 @@
+.duvidas__naoSolucionou {
+  border-radius: 1.25rem;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.30);
+  width: 40%;
+}
+
+@media screen and (max-width: 1290px) {
+  .duvidas__naoSolucionou {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1024px) {    
+  .duvidas__naoSolucionou {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .duvidas__naoSolucionou {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .duvidas__naoSolucionou {
+    width: 100%;
+  }
+}

@@ -1,0 +1,27 @@
+.duvidas__formTitulo {
+  padding: 0.5rem 2.5rem;
+  color: var(--var-cor-azul);
+}
+
+@media screen and (max-width: 1290px) {
+  .duvidas__formTitulo {
+    padding: 0.825rem 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 1024px) {    
+  .duvidas__formTitulo {
+    padding: 0.825rem 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .duvidas__formTitulo {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}

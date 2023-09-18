@@ -1,0 +1,12 @@
+.simulador__input {
+  display: flex;
+  flex-direction: column;
+}
+
+#nomeSimulador, #emailSimulador {
+  border: none;
+  border-radius: 0.625rem;
+  padding: 0.5rem;
+  outline: none;
+  margin-top: 0.25rem;
+}

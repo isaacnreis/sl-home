@@ -1,0 +1,13 @@
+.newsletter__descricao {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; 
+}
+
+@media screen and (max-width: 900px) {
+  .newsletter__descricao {
+    font-size: 1.5rem;
+    font-weight: 500;
+  } 
+}

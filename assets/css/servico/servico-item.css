@@ -1,0 +1,5 @@
+@media screen and (max-width: 768px) { 
+  .servico__item::marker {
+    font-size: 0.5rem;
+  }
+}

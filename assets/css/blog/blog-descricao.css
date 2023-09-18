@@ -1,0 +1,11 @@
+.blog__descricao {
+  color: var(--var-cor-branco);
+  text-align: center;
+}
+
+@media screen and (max-width: 560px) {
+  .blog__descricao {
+    font-weight: 300;
+    margin-top: 1rem;
+  }
+}

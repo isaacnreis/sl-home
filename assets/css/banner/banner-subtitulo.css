@@ -1,0 +1,41 @@
+.banner__subtitulo {
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
+}
+
+@media screen and (max-width: 1024px) {
+  .banner__subtitulo {
+    margin-top: 1.825rem;
+    font-weight: 300;
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .banner__subtitulo {
+     font-size: 2.5rem;
+     padding: 0 1rem;
+   }
+}
+
+@media screen and (max-width: 768px) {
+  .banner__subtitulo {
+    font-size: 2rem;
+    padding: 0 0.5rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .banner__subtitulo {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .banner__subtitulo {
+    margin-top: 1rem;
+  }
+}

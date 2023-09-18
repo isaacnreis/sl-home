@@ -1,0 +1,9 @@
+.blog__linkArtigo {
+  color: var(--var-cor-laranja);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.blog__linkArtigo:hover {
+  color: var(--var-cor-azul);
+}

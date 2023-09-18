@@ -1,0 +1,14 @@
+.blog__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 560px) {
+  .blog__container {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+  }
+}

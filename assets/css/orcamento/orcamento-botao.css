@@ -1,0 +1,19 @@
+.orcamento__botao {
+  background: var(--var-cor-azul);
+  border-radius: 0.625rem;
+  color: var(--var-cor-branco);
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1290px) {
+  .orcamento__botao {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .orcamento__botao {
+    margin: 0 auto;
+    width: 35%;
+  }
+}

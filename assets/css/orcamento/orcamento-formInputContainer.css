@@ -1,0 +1,18 @@
+.orcamento__formInputContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1290px) {
+  .orcamento__formInputContainer { 
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .orcamento__formInputContainer {
+    flex-direction: column;
+  }
+}

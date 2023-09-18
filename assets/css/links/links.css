@@ -1,0 +1,12 @@
+.links {
+  display: flex;
+  height: auto;
+  margin: 2rem 0 6rem 0;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 560px) {
+  .links {
+    display: none;
+  }
+}

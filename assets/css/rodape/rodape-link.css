@@ -1,0 +1,10 @@
+.rodape__link {
+  color: var(--var-cor-branco);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.2s all ease-in-out;
+}
+
+.rodape__link:hover {
+  color: var(--var-cor-laranja);
+}

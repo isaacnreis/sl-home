@@ -1,0 +1,37 @@
+.newsletter__anuncio {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
+}
+
+@media screen and (max-width: 1290px) {
+  .newsletter__anuncio {
+    font-size: 2.5rem;
+    font-weight: 300;
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .newsletter__anuncio {
+    font-size: 2.25rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .newsletter__anuncio:first-child {
+    font-size: 2rem;
+    font-weight: 700;
+    width: 100%;
+  }
+
+  .newsletter__anuncio:last-child {
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}

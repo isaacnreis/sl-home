@@ -1,0 +1,149 @@
+:root {
+  --var-cor-preto: #0F0A0A;
+  --var-cor-azul: #212969;
+  --var-cor-branco: #FDFFFC;
+  --var-cor-laranja: #CC5803;
+  --var-cor-amarelo: #FAB919;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: .8em;
+}
+
+.container {
+  padding-left: 10rem;
+  padding-right: 10rem;
+  max-width: 1920px;
+}
+
+.botao {
+  background: var(--var-cor-amarelo);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  color: var(--var-cor-azul);
+  cursor: pointer;
+  filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.35));
+  font-weight: 500; 
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.85rem 1.25rem;
+}
+
+.logo {
+  height: 10rem;
+  height: 10rem;
+}
+
+.tituloH2 {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.tituloH3 {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; 
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media screen and (max-width: 1290px) {
+  .container {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  
+  .logo {
+    height: 8rem;
+    height: 8rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container { 
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .logo {
+    height: 7rem;
+    height: 7rem;
+  }
+
+  .tituloH2 {
+    font-size: 2rem;
+  }
+  
+  .tituloH3 { 
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) { 
+  .tituloH2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .botao {
+    padding: 0.5rem;
+  }
+
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .logo {
+    height: 6rem;
+    height: 6rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .logo {
+    height: 5rem;
+    height: 5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}

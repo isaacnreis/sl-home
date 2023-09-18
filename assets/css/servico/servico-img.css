@@ -1,0 +1,33 @@
+.servico__img--PH {
+  background: center / cover no-repeat url('../../img/ph.jpg');
+  height: 300px;
+  width: 100%;
+}
+.servico__img--INS {
+  background: center / cover no-repeat url('../../img/ins.jpg');
+  height: 300px;
+  width: 100%;
+}
+.servico__img--OP {
+  background: center / cover no-repeat url('../../img/om.jpg');
+  height: 300px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .servico__img--PH {
+    background: center / cover no-repeat url('../../img/ph.jpg');
+    height: 200px;
+    width: 100%;
+  }
+  .servico__img--INS {
+    background: center / cover no-repeat url('../../img/ins.jpg');
+    height: 200px;
+    width: 100%;
+  }
+  .servico__img--OP {
+    background: center / cover no-repeat url('../../img/om.jpg');
+    height: 200px;
+    width: 100%;
+  }
+}

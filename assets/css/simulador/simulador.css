@@ -1,0 +1,17 @@
+.simulador {
+  align-items: center;
+  background: linear-gradient(0deg, rgba(18, 25, 83, 0.45) 0%, rgba(18, 25, 83, 0.45) 100%), fixed url("../../img/bgSimulador.jpg"), lightgray 50% / cover no-repeat;
+  color: var(--var-cor-branco);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media screen and (max-width: 560px) {
+  .simulador {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}

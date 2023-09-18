@@ -1,0 +1,12 @@
+.rodape__copy {
+  color: var(--var-cor-branco);
+  padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 560px) {
+  .rodape__copy {
+    font-size: 0.875rem;
+    text-align: center;
+    padding-top: 1rem;
+  }
+}

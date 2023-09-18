@@ -1,0 +1,11 @@
+.rodape__borda {
+  border-right: 2px solid var(--var-cor-branco);
+}
+
+@media screen and (max-width: 560px) {
+  .rodape__borda {
+    border-top: 1.5px solid var(--var-cor-branco);
+    border-right: 0;
+    width: 70%;
+  }
+}

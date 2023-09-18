@@ -1,0 +1,6 @@
+.rodape__email {
+  color: var(--var-cor-branco);
+  transition: 0.2s all ease-in-out;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}

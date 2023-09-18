@@ -1,0 +1,22 @@
+.newsletter__container {
+  border-top: 2px solid var(--var-cor-branco);
+  margin: 1rem auto;
+  padding-top: 1rem;
+  width: 50%;
+}
+
+@media screen and (max-width: 1290px) {
+  .newsletter__container {
+    margin: 2rem auto;
+    padding-top: 2rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .newsletter__container {
+    margin: 2rem auto;
+    padding-top: 2rem;
+    width: 100%;
+  }
+}
