@@ -1,5 +1,7 @@
 .projetos__container {
   padding: 4rem 0 6rem 0;
+  display: flex;
+  gap: 2rem;
 }
 
 @media screen and (max-width: 1290px) {

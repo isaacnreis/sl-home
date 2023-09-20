@@ -1,0 +1,32 @@
+{
+  "projetos": [
+    {
+      "imagem": "./assets/img/UsinaSoniaLage/1.jpg",
+      "nome": "Usina Sonia Lage",
+      "localidade": "Brumadinho",
+      "imagens": [
+        "./assets/img/UsinaSoniaLage/1.jpg",
+        "./assets/img/UsinaSoniaLage/2.jpg",
+        "./assets/img/UsinaSoniaLage/3.jpg",
+        "./assets/img/UsinaSoniaLage/4.jpg",
+        "./assets/img/UsinaSoniaLage/5.jpg"
+      ]
+    },
+    {
+      "imagem": "./assets/img/UsinaLiliamColonial/1.jpg",
+      "nome": "Usina Liliam Colonial",
+      "localidade": "Capim Branco",
+      "imagens": [
+        "./assets/img/UsinaLiliamColonial/1.jpg",
+        "./assets/img/UsinaLiliamColonial/2.jpg",
+        "./assets/img/UsinaLiliamColonial/3.jpg",
+        "./assets/img/UsinaLiliamColonial/4.jpg",
+        "./assets/img/UsinaLiliamColonial/5.jpg",
+        "./assets/img/UsinaLiliamColonial/6.jpg",
+        "./assets/img/UsinaLiliamColonial/7.jpg",
+        "./assets/img/UsinaLiliamColonial/8.jpg",
+        "./assets/img/UsinaLiliamColonial/9.jpg"
+      ]
+    }
+  ]
+}
