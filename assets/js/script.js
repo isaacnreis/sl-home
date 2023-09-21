@@ -7,7 +7,7 @@ const setaDireita = document.querySelector('.seta-direita');
 const depoimentos = [];
 let contadorDepoimento = 0;
 
-fetch("http://127.0.0.1:5500/assets/db/projetos.json")
+fetch("https://isaacnreis.github.io/sl-home/assets/db/projetos.json")
   .then((response) => {response.json()
   .then((dados) => {dados.projetos.map((projeto) => {
 
@@ -28,7 +28,7 @@ fetch("http://127.0.0.1:5500/assets/db/projetos.json")
 })
 
 async function chamaDepoimentos() {
-  await fetch("http://127.0.0.1:5500/assets/db/depoimentos.json")
+  await fetch("https://isaacnreis.github.io/sl-home/assets/db/depoimentos.json")
     .then((response) => {response.json()
     .then((dados) => {dados.depoimentos.map((depoimento) => {
       depoimentos.push(depoimento);
