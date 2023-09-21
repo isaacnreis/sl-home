@@ -1,7 +1,8 @@
-const projetosContainer = document.querySelector('.projetos__container');1
-const mensagemDepoimento = document.querySelector('.depoimento blockquote');1
-const nomeDepoimento = document.querySelector('.depoimento p');1
-
+const projetosContainer = document.querySelector('.projetos__container');
+const mensagemDepoimento = document.querySelector('.depoimento blockquote');
+const nomeDepoimento = document.querySelector('.depoimento p');
+const setaEsquerda = document.querySelector('.seta-esquerda');
+const setaDireita = document.querySelector('.seta-direita');
 
 const depoimentos = [];
 let contadorDepoimento = 0;
@@ -34,13 +35,37 @@ async function chamaDepoimentos() {
     })});
   })
 
+  // Altera os depoimentos a cada 30 segundos
   setInterval(() => {
     contadorDepoimento++;
     if (depoimentos.length <= contadorDepoimento) contadorDepoimento = 0;
 
     mensagemDepoimento.innerHTML = '"' + depoimentos[contadorDepoimento].mensagem + '"';
     nomeDepoimento.innerHTML = depoimentos[contadorDepoimento].nome;
-  }, 30000);
+  }, 3000);
 }
 
 chamaDepoimentos()
+
+
+setaEsquerda.addEventListener('click', () => {
+  if (contadorDepoimento != 0) {
+    contadorDepoimento--;
+  } else {
+    contadorDepoimento = depoimentos.length - 1;
+  }
+  mensagemDepoimento.innerHTML = '"' + depoimentos[contadorDepoimento].mensagem + '"';
+  nomeDepoimento.innerHTML = depoimentos[contadorDepoimento].nome;
+  console.log('seta esquerda')
+})
+
+setaDireita.addEventListener('click', () => {
+  if (depoimentos.length > (contadorDepoimento+1)) {
+    contadorDepoimento++;
+  } else {
+    contadorDepoimento = 0;
+  }
+  mensagemDepoimento.innerHTML = '"' + depoimentos[contadorDepoimento].mensagem + '"';
+  nomeDepoimento.innerHTML = depoimentos[contadorDepoimento].nome;
+  console.log('seta direita')
+})
