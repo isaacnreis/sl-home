@@ -2,6 +2,8 @@
   padding: 4rem 0 6rem 0;
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 1290px) {

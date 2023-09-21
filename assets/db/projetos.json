@@ -27,6 +27,96 @@
         "./assets/img/UsinaLiliamColonial/8.jpg",
         "./assets/img/UsinaLiliamColonial/9.jpg"
       ]
+    },
+    {
+      "imagem": "./assets/img/UsinaSoloJaboticatubas/1.jpg",
+      "nome": "Usina Solo",
+      "localidade": "Jaboticatubas",
+      "imagens": [
+        "./assets/img/UsinaSoloJaboticatubas/1.jpg",
+        "./assets/img/UsinaSoloJaboticatubas/2.jpg",
+        "./assets/img/UsinaSoloJaboticatubas/3.jpg",
+        "./assets/img/UsinaSoloJaboticatubas/4.jpg",
+        "./assets/img/UsinaSoloJaboticatubas/5.jpg",
+        "./assets/img/UsinaSoloJaboticatubas/6.jpg",
+        "./assets/img/UsinaSoloJaboticatubas/7.jpg"
+      ]
+    },
+    {
+      "imagem": "./assets/img/UsinaMotel/1.jpg",
+      "nome": "Usina Motel",
+      "localidade": "Usina",
+      "imagens": [
+        "./assets/img/UsinaMotel/1.jpg",
+        "./assets/img/UsinaMotel/2.jpg",
+        "./assets/img/UsinaMotel/3.jpg",
+        "./assets/img/UsinaMotel/4.jpg",
+        "./assets/img/UsinaMotel/5.jpg",
+        "./assets/img/UsinaMotel/6.jpg",
+        "./assets/img/UsinaMotel/7.jpg",
+        "./assets/img/UsinaMotel/8.jpg"
+      ]
+    },
+    {
+      "imagem": "./assets/img/UsinaMetalicaCongonhas/1.jpg",
+      "nome": "Usina Metalica",
+      "localidade": "Congonhas",
+      "imagens": [
+        "./assets/img/UsinaMetalicaCongonhas/1.jpg",
+        "./assets/img/UsinaMetalicaCongonhas/2.jpg",
+        "./assets/img/UsinaMetalicaCongonhas/3.jpg"
+      ]
+    },
+    {
+      "imagem": "./assets/img/UsinaJaimeColonialBetim/1.jpg",
+      "nome": "Usina Jaime Colonial",
+      "localidade": "Betim",
+      "imagens": [
+        "./assets/img/UsinaJaimeColonialBetim/1.jpg",
+        "./assets/img/UsinaJaimeColonialBetim/2.jpg",
+        "./assets/img/UsinaJaimeColonialBetim/3.jpg",
+        "./assets/img/UsinaJaimeColonialBetim/4.jpg",
+        "./assets/img/UsinaJaimeColonialBetim/5.jpg"
+      ]
+    },
+    {
+      "imagem": "./assets/img/UsinaFibrocimentoBetim/1.jpg",
+      "nome": "Usina Fibrocimento",
+      "localidade": "Betim",
+      "imagens": [
+        "./assets/img/UsinaFibrocimentoBetim/1.jpg",
+        "./assets/img/UsinaFibrocimentoBetim/2.jpg",
+        "./assets/img/UsinaFibrocimentoBetim/3.jpg",
+        "./assets/img/UsinaFibrocimentoBetim/4.jpg",
+        "./assets/img/UsinaFibrocimentoBetim/5.jpg",
+        "./assets/img/UsinaFibrocimentoBetim/6.jpg",
+        "./assets/img/UsinaFibrocimentoBetim/7.jpg",
+        "./assets/img/UsinaFibrocimentoBetim/8.jpg"
+      ]
+    },
+    {
+      "imagem": "./assets/img/UsinaDanielMetalicoBetim/1.jpg",
+      "nome": "Usina Daniel Metalico",
+      "localidade": "Betim",
+      "imagens": [
+        "./assets/img/UsinaDanielMetalicoBetim/1.jpg",
+        "./assets/img/UsinaDanielMetalicoBetim/2.jpg",
+        "./assets/img/UsinaDanielMetalicoBetim/3.jpg",
+        "./assets/img/UsinaDanielMetalicoBetim/4.jpg",
+        "./assets/img/UsinaDanielMetalicoBetim/5.jpg"
+      ]
+    },
+    {
+      "imagem": "./assets/img/UsinaColonial/1.jpeg",
+      "nome": "Usina Colonial",
+      "localidade": "Usina",
+      "imagens": [
+        "./assets/img/UsinaColonial/1.jpeg",
+        "./assets/img/UsinaColonial/2.jpeg",
+        "./assets/img/UsinaColonial/3.jpeg",
+        "./assets/img/UsinaColonial/4.jpeg",
+        "./assets/img/UsinaColonial/5.jpeg"
+      ]
     }
   ]
 }

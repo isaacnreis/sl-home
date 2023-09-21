@@ -40,7 +40,7 @@ async function chamaDepoimentos() {
 
     mensagemDepoimento.innerHTML = '"' + depoimentos[contadorDepoimento].mensagem + '"';
     nomeDepoimento.innerHTML = depoimentos[contadorDepoimento].nome;
-  }, 3000);
+  }, 30000);
 }
 
 chamaDepoimentos()
