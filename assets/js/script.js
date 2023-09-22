@@ -1,31 +1,49 @@
 const projetosContainer = document.querySelector('.projetos__container');
+let projetos;
+
 const mensagemDepoimento = document.querySelector('.depoimento blockquote');
 const nomeDepoimento = document.querySelector('.depoimento p');
 const setaEsquerda = document.querySelector('.seta-esquerda');
 const setaDireita = document.querySelector('.seta-direita');
 
+const modalProjetos = document.querySelector('.modalProjetos');
+const fecharModalProjetos = document.querySelector('.fecharModalProjetos');
+
 const depoimentos = [];
 let contadorDepoimento = 0;
 
-fetch("https://isaacnreis.github.io/sl-home/assets/db/projetos.json")
-  .then((response) => {response.json()
-  .then((dados) => {dados.projetos.map((projeto) => {
+async function chamaProjetos() {
+  await fetch("https://isaacnreis.github.io/sl-home/assets/db/projetos.json")
+    .then((response) => {response.json()
+    .then((dados) => {dados.projetos.map((projeto) => {
 
-    let article = document.createElement('article');
-    article.classList.add('projeto');
+      let article = document.createElement('article');
+      article.classList.add('projeto');
 
-    let projetoHtml = `
-      <img class="projeto__img" src="${projeto.imagem}" alt="Projeto realizado em ${projeto.localidade}">
-      <h4 class="projeto__tipo">${projeto.nome}</h4>
-      <h3 class="projeto__localidade tituloH3">${projeto.localidade}</h3>
-    `;
+      let projetoHtml = `
+        <img class="projeto__img" src="${projeto.imagem}" alt="Projeto realizado em ${projeto.localidade}">
+        <h4 class="projeto__tipo">${projeto.nome}</h4>
+        <h3 class="projeto__localidade tituloH3">${projeto.localidade}</h3>
+      `;
 
-    article.innerHTML = projetoHtml;
+      article.innerHTML = projetoHtml;
 
-    projetosContainer.appendChild(article);
+      projetosContainer.appendChild(article);
 
-  })})
-})
+      projetos = document.querySelectorAll('.projeto');
+      console.log(projetos)
+
+      projetos.forEach(projeto => {
+        projeto.addEventListener('click', () => {
+          modalProjetos.style.display = 'flex'
+        })
+      });
+      
+    })})
+  })
+}
+
+chamaProjetos();
 
 async function chamaDepoimentos() {
   await fetch("https://isaacnreis.github.io/sl-home/assets/db/depoimentos.json")
@@ -69,3 +87,9 @@ setaDireita.addEventListener('click', () => {
   nomeDepoimento.innerHTML = depoimentos[contadorDepoimento].nome;
   console.log('seta direita')
 })
+
+fecharModalProjetos.addEventListener('click', () => {
+  modalProjetos.style.display = 'none'
+})
+
+

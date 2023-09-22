@@ -1,0 +1,5 @@
+.modalProjetos__imagem img {
+  width: 80vw;
+  border-radius: 0.625rem;
+  transition: all 0.2s ease-in-out; 
+}
