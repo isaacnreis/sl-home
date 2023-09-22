@@ -1,5 +1,47 @@
-.modalProjetos__imagem img {
+.modalProjetos__imagem {
   width: 80vw;
+  height: 85vh;
+  border-radius: 0.625rem;
+  transition: all 0.2s ease-in-out;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalProjetos__imagem img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
   border-radius: 0.625rem;
   transition: all 0.2s ease-in-out; 
+}
+
+@media screen and (max-width: 1024px) {
+  .modalProjetos__imagem img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) { 
+  .modalProjetos__imagem img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .modalProjetos__imagem img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .modalProjetos__imagem img {
+    width: auto;
+    height: 100%;
+  }
 }
