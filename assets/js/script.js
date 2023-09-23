@@ -12,7 +12,7 @@ const depoimentos = [];
 let contadorDepoimento = 0;
 
 // Elementos seção Modal Projetos
-const modalProjetos = document.querySelector('.modalProjetos');
+const modalProjetos = document.querySelector('.modalProjetos-container');
 const fecharModalProjetos = document.querySelector('.fecharModalProjetos');
 const modalProjetosImagem = document.querySelector('.modalProjetos__imagem');
 const setaEsquerdaModalProjetos = document.querySelector('.modalProjetos .seta-esquerda');

@@ -33,15 +33,13 @@
 }
 
 @media screen and (max-width: 560px) {
-  .modalProjetos__imagem img {
-    width: auto;
-    height: 100%;
+  .modalProjetos__imagem {
+    height: auto;
+    margin: 2rem 0;
   }
-}
 
-@media screen and (max-width: 375px) {
   .modalProjetos__imagem img {
     width: auto;
-    height: 100%;
+    height: auto;
   }
 }

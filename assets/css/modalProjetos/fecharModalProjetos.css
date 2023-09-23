@@ -5,8 +5,8 @@
   cursor: pointer;
   width: 5rem;
   position: absolute;
-  top: -5vh;
-  right: -2.8vw;
+  top: 2vh;
+  right: 2vw;
 }
 
 .fecharModalProjetos img {
@@ -17,23 +17,23 @@
 @media screen and (max-width: 1024px) {
   .fecharModalProjetos {
     width: 4rem;
-    top: -4vh;
-    right: -2.8vw;
+    top: 2vh;
+    right: 2vw;
   }
 }
 
 @media screen and (max-width: 768px) { 
   .fecharModalProjetos {
     width: 3.5rem;
-    top: -4vh;
-    right: -2.8vw;
+    top: 2vh;
+    right: 2vw;
   }
 }
 
 @media screen and (max-width: 375px) {
   .fecharModalProjetos {
     width: 3rem;
-    top: -3vh;
-    right: -2.8vw;
+    top: 2vh;
+    right: 2vw;
   }
 }
