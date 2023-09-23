@@ -58,6 +58,13 @@
     transform: rotate(180deg);
   }
 
+  .raio {
+    display: inline-block;
+    background: url('../img/flash.svg') no-repeat center / contain;;
+    width: 2rem;
+    height: 2rem;
+  }
+
   @media screen and (max-width: 768px) { 
     .fa-wpp {
         margin-right: 0;

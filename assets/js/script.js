@@ -225,17 +225,27 @@ formSimulador.addEventListener('submit', (evento) => {
   
   modalSimuladorResultadoTextos.innerHTML = `
     <h1>Olá ${nome.value}, aqui estão os valores que irá economizar, não perca tempo, entre em contato agora mesmo!</h1>
-    <div>
-      <h2>Novo valor da fatura</h2>
-      <h3>${novoValorFatura}</h3>
+    
+    <div class="modalSimuladorResultado__texto">
+      <i class="raio"></i>
+      <div>
+        <h2>Novo valor da fatura</h2>
+        <h3>${novoValorFatura}</h3>
+      </div>
     </div>
-    <div>
-      <h2>Economia Mensal</h2>
-      <h3>${economiaMensal}</h3>
+    
+    <div class="modalSimuladorResultado__texto">
+      <div>
+        <h2>Economia Mensal</h2>
+        <h3>${economiaMensal}</h3>
+      </div>
     </div>
-    <div>
-      <h2>Economia Anual</h2>
-      <h3>${economiaAnual}</h3>
+
+    <div class="modalSimuladorResultado__texto">
+      <div>      
+        <h2>Economia Anual</h2>
+        <h3>${economiaAnual}</h3>
+      </div>
     </div>
   `
 
