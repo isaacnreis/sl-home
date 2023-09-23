@@ -153,3 +153,21 @@ setaDireitaModalProjetos.addEventListener('click', () => {
   alteraProjeto();
   console.log('seta direita')
 })
+
+
+// Funções para seção Simulador
+const valorPago = document.getElementById('valorPago');
+const valorPagoSelecionado = document.getElementById('valorPagoSelecionado');
+const taxaIluminacao = document.getElementById('taxaIluminacao');
+const taxaIluminacaoSelecionado = document.getElementById('taxaIluminacaoSelecionado');
+
+valorPago.addEventListener('input', () => {
+  let valor = valorPago.value;
+  valorPagoSelecionado.innerHTML = Number(valor).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+})
+
+taxaIluminacao.addEventListener('input', () => {
+  let valor = taxaIluminacao.value;
+  taxaIluminacaoSelecionado.innerHTML = Number(valor).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+})
+
