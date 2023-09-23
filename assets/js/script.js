@@ -156,10 +156,21 @@ setaDireitaModalProjetos.addEventListener('click', () => {
 
 
 // Funções para seção Simulador
-const valorPago = document.getElementById('valorPago');
-const valorPagoSelecionado = document.getElementById('valorPagoSelecionado');
-const taxaIluminacao = document.getElementById('taxaIluminacao');
-const taxaIluminacaoSelecionado = document.getElementById('taxaIluminacaoSelecionado');
+const formSimulador = document.getElementById('simulador__form');
+let valorPago = document.getElementById('valorPago');
+let valorPagoSelecionado = document.getElementById('valorPagoSelecionado');
+let taxaIluminacao = document.getElementById('taxaIluminacao');
+let taxaIluminacaoSelecionado = document.getElementById('taxaIluminacaoSelecionado');
+let nome = document.getElementById('nomeSimulador');
+let email = document.getElementById('emailSimulador');
+let faseInstalacao;
+let valorFaseInstalacao;
+let novoValorFatura;
+let economiaMensal;
+let economiaAnual;
+const modalSimuladorResultado = document.getElementById('modalSimuladorResultado');
+const modalSimuladorResultadoTextos = document.getElementById('modalSimuladorResultado__textos');
+const fecharModalResultadoSimulador = document.querySelector('.fecharModalResultadoSimulador');
 
 valorPago.addEventListener('input', () => {
   let valor = valorPago.value;
@@ -169,5 +180,70 @@ valorPago.addEventListener('input', () => {
 taxaIluminacao.addEventListener('input', () => {
   let valor = taxaIluminacao.value;
   taxaIluminacaoSelecionado.innerHTML = Number(valor).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+})
+
+formSimulador.addEventListener('submit', (evento) => {
+  evento.preventDefault();
+
+  // Valore fornecidos pelo cliente
+  //   Valor pago atualmente : valorPago
+  //   Taxa de iluminação publica : taxaIluminacao
+  //   Fase da instalação : faseInstalacao
+  valorPago = parseFloat(valorPago.value);
+  taxaIluminacao = parseFloat(taxaIluminacao.value);
+  faseInstalacao = document.querySelector('input[name="faseInstalacao"]:checked').value;
+
+  // Formulas
+  // x = taxaIluminacao + se (fase = monofásico; 30 *0,8; se (fase = bifásico; 50 * 0,8; se (fase = trifásico; 100*0,8)))
+  // y = valorPago - x
+  // z = y*12
+  
+  if (faseInstalacao == 'monofasico') {
+    valorFaseInstalacao = 30*0.8;
+
+  } else if (faseInstalacao == 'bifasico') {
+    valorFaseInstalacao = 50*0.8;
+
+  } else if (faseInstalacao == 'trifasico') {
+    valorFaseInstalacao = 100*0.8;
+
+  }
+
+  novoValorFatura = taxaIluminacao + valorFaseInstalacao;
+  economiaMensal = valorPago - novoValorFatura;
+  economiaAnual = economiaMensal*12;
+
+  novoValorFatura = Number(novoValorFatura).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+  economiaMensal = Number(economiaMensal).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+  economiaAnual = Number(economiaAnual).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+
+  // Resultados
+  //   Novo valor da fatura
+  //   Economia mensal
+  //   Economia anual
+
+  
+  modalSimuladorResultadoTextos.innerHTML = `
+    <h1>Olá ${nome.value}, aqui estão os valores que irá economizar, não perca tempo, entre em contato agora mesmo!</h1>
+    <div>
+      <h2>Novo valor da fatura</h2>
+      <h3>${novoValorFatura}</h3>
+    </div>
+    <div>
+      <h2>Economia Mensal</h2>
+      <h3>${economiaMensal}</h3>
+    </div>
+    <div>
+      <h2>Economia Anual</h2>
+      <h3>${economiaAnual}</h3>
+    </div>
+  `
+
+  modalSimuladorResultado.style.display = 'flex';
+
+})
+
+fecharModalResultadoSimulador.addEventListener('click', () => {
+  modalSimuladorResultado.style.display = 'none'
 })
 

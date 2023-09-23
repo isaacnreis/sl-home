@@ -144,6 +144,7 @@
   <link rel="stylesheet" href="./assets/css/modalProjetos/modalProjetos.css">
   <link rel="stylesheet" href="./assets/css/modalProjetos/modalProjetos-imagem.css">
   <link rel="stylesheet" href="./assets/css/modalProjetos/fecharModalProjetos.css">
+  <link rel="stylesheet" href="./assets/css/modalSimuladorResultado/modalSimuladorResultado.css">
 
 </head>
 <body>
@@ -279,7 +280,7 @@
     <section class="simulador container" id="simulador">
       <h2 class="simulador__titulo tituloH2">Simulador</h2>
       <p class="simulador__descricao">Simule agora para saber quanto você pode economizar utilizando a energia solar</p>
-      <form class="simulador__form">
+      <form class="simulador__form" id="simulador__form">
         <div class="simulador__input">
           <label for="valorPago" class="simulador__label">Valor pago atualmente R$:</label>
           <input class="simulador__range" id="valorPago" name="valorPago" type="range" min="0" max="3999" step="0.01" />
@@ -471,6 +472,22 @@
         </svg>
       </button>
     </div>
+  </div>
+  <div class="modalSimuladorResultado" id="modalSimuladorResultado">
+    <section class="resultadoSimuladorContainer">
+
+      <button class="fecharModalResultadoSimulador">
+        <img src="./assets/img/close.svg" alt="botão para fechar modal">
+      </button>
+
+      <img src="./assets/img/energySun.svg" alt="ícone de um sol" class="modalSimuladorResultado__icone">
+
+      <div class="modalSimuladorResultado__textos" id="modalSimuladorResultado__textos">
+        
+      </div>
+
+      <a href="https://web.whatsapp.com/send?phone=5531993600722" target="_blank" class="botao modalSimuladorResultado__botao">Entre em contato pelo Whatsapp</a>
+    </section>
   </div>
 
   <!-- Meu JS -->

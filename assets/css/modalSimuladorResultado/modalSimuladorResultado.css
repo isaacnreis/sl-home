@@ -1,0 +1,75 @@
+.modalSimuladorResultado {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.607);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.resultadoSimuladorContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+
+  background: var(--var-cor-branco);
+  border-radius: 1.25rem;
+  width: 50vw;
+  height: 80vh;
+  padding: 2rem;
+}
+
+.fecharModalResultadoSimulador {
+  background: var(--var-cor-amarelo);
+  border: none;
+  border-radius: 4rem;
+  cursor: pointer;
+  width: 5rem;
+  position: absolute;
+  top: 2vh;
+  right: 2vw;
+}
+
+.fecharModalResultadoSimulador img {
+  width: 100%;
+  stroke: var(--var-cor-azul);
+}
+
+@media screen and (max-width: 1024px) {
+  .fecharModalResultadoSimulador {
+    width: 4rem;
+    top: 2vh;
+    right: 2vw;
+  }
+}
+
+@media screen and (max-width: 768px) { 
+  .fecharModalResultadoSimulador {
+    width: 3.5rem;
+    top: 2vh;
+    right: 2vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .fecharModalResultadoSimulador {
+    width: 3rem;
+    top: 2vh;
+    right: 2vw;
+  }
+}
+
+.modalSimuladorResultado__icone {
+  align-self: center;
+  width: 4rem;
+}
+
+.modalSimuladorResultado__botao {
+  align-self: center;
+}
