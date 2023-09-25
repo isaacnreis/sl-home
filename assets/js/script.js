@@ -22,6 +22,20 @@ let dataProjetoId;
 let contImagem = 1;
 let intervalId;
 
+const menuMobile = document.querySelector('.cabecalho__navMobileMenu');
+let showMenuMobile = false;
+const cabecalhoMenuMobile = document.querySelector('.show-cabecalho__navMobile');
+
+menuMobile.addEventListener('click', () => {
+  showMenuMobile = !showMenuMobile;
+  if (showMenuMobile) {
+    cabecalhoMenuMobile.style.display = 'flex';
+    setTimeout(() => {cabecalhoMenuMobile.style.height = ' 6rem';}, 100);
+  } else {
+    cabecalhoMenuMobile.style.height = '0';
+    setTimeout(() => {cabecalhoMenuMobile.style.display = 'none';}, 100);
+  }
+})
 
 
 // Funções seção Depoimentos
