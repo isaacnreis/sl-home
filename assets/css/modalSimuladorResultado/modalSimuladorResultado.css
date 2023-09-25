@@ -18,17 +18,47 @@
   justify-content: center;
   align-items: flex-start;
 
-  background: var(--var-cor-branco);
+  background: var(--var-cor-azul);
   border-radius: 1.25rem;
-  width: 50vw;
-  height: 80vh;
+  color: var(--var-cor-branco);
+  width: 60vw;
+  height: 90vh;
   padding: 2rem;
+}
+
+.modalSimuladorResultado__textos h1 {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .modalSimuladorResultado__texto {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-top: 1rem;
+}
+
+.modalSimuladorResultado__texto h2 {
+  font-size: 1.25rem;
+}
+
+.modalSimuladorResultado__texto h3 {
+  color: green;
+  font-size: 2rem;
+  position: relative;
+  opacity: 1;
+  animation: baixo 2s;
+}
+
+@keyframes baixo {
+  0% {
+    top: -20vh;
+    opacity: 0;
+  } 
+  100% {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 .fecharModalResultadoSimulador {
@@ -53,6 +83,10 @@
     top: 2vh;
     right: 2vw;
   }
+
+  .resultadoSimuladorContainer {
+    width: 80vw;
+  }
 }
 
 @media screen and (max-width: 768px) { 
@@ -61,6 +95,11 @@
     top: 2vh;
     right: 2vw;
   }
+
+  .resultadoSimuladorContainer {
+    width: 90vw;
+    padding: 1rem;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -68,6 +107,18 @@
     width: 3rem;
     top: 2vh;
     right: 2vw;
+  }
+
+  .modalSimuladorResultado__textos h1, .modalSimuladorResultado__textos h2 {
+    font-size: 1rem;
+  }
+
+  .modalSimuladorResultado__textos h3 {
+    font-size: 1.5rem;
+  }
+
+  .modalSimuladorResultado__botao {
+    font-size: 0.825rem;
   }
 }
 
@@ -78,4 +129,5 @@
 
 .modalSimuladorResultado__botao {
   align-self: center;
+  text-align: center;
 }

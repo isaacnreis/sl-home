@@ -229,21 +229,23 @@ formSimulador.addEventListener('submit', (evento) => {
     <div class="modalSimuladorResultado__texto">
       <i class="raio"></i>
       <div>
-        <h2>Novo valor da fatura</h2>
+        <h2>Novo valor da fatura:</h2>
         <h3>${novoValorFatura}</h3>
       </div>
     </div>
     
     <div class="modalSimuladorResultado__texto">
+      <i class="lampada"></i>
       <div>
-        <h2>Economia Mensal</h2>
+        <h2>Economia Mensal:</h2>
         <h3>${economiaMensal}</h3>
       </div>
     </div>
 
     <div class="modalSimuladorResultado__texto">
+      <i class="painel"></i>
       <div>      
-        <h2>Economia Anual</h2>
+        <h2>Economia Anual:</h2>
         <h3>${economiaAnual}</h3>
       </div>
     </div>
