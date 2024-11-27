@@ -7,5 +7,5 @@
     url("../../img/bgNew.jpeg"), lightgray 50% / contain no-repeat;
   color: var(--var-cor-branco);
   text-align: center;
-  padding: 4rem 0;
+  padding: 4rem 1rem;
 }
