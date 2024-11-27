@@ -3,14 +3,16 @@
   border: none;
   border-radius: 4rem;
   cursor: pointer;
-  width: 5rem;
+  width: 4rem;
+  height: 4rem;
   position: absolute;
   top: 2vh;
-  right: 2vw;
+  right: 3vw;
 }
 
 .fecharModalProjetos img {
   width: 100%;
+  padding: 0.5rem;
   stroke: var(--var-cor-azul);
 }
 
@@ -22,7 +24,7 @@
   }
 }
 
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 768px) {
   .fecharModalProjetos {
     width: 3.5rem;
     top: 2vh;

@@ -1,25 +1,26 @@
 .links__card {
-  border-radius: 0px 60px;
+  border-radius: 0px 40px;
   background: var(--var-cor-azul);
-  box-shadow: 40px 40px 25px 0px rgba(0, 0, 0, 0.50), 25px 27px 0px 0px #0B1037, 5px 10px 10px 0px rgba(16, 22, 72, 0.50) inset;
+  box-shadow: 40px 40px 25px 0px rgba(0, 0, 0, 0.5), 10px 15px 0px 0px #0b1037,
+    5px 10px 10px 0px rgba(16, 22, 72, 0.5) inset;
   color: var(--var-cor-branco);
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.25rem;
   justify-content: space-evenly;
-  width: calc(33.33% - 4rem);
-  padding: 3.5rem 0;
+  width: calc(33.33% - 6rem);
+  padding: 3rem 0;
 }
 
 @media screen and (max-width: 1290px) {
   .links__card {
     gap: 0.5rem;
-    padding: 3rem 0;
+    padding: 2.75rem 0;
   }
 }
 
-@media screen and (max-width: 1024px) {  
+@media screen and (max-width: 1024px) {
   .links__card {
     gap: 1rem;
     padding: 1.5rem 0;

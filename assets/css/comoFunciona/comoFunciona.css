@@ -4,19 +4,19 @@
 }
 
 .comoFunciona__bg {
-  margin: 0 auto;  
-  height: 100vh;
+  margin: 0 auto;
+  height: 75vh;
   padding-bottom: 4rem;
 }
 
 @media screen and (max-width: 1290px) {
   .comoFunciona__bg {
-    margin: 0 auto;  
-    height: 80vh;
+    margin: 0 auto;
+    height: 60vh;
   }
 }
 
-@media screen and (max-width: 1024px) {  
+@media screen and (max-width: 1024px) {
   .comoFunciona__bg {
     width: 100%;
     height: auto;

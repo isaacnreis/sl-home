@@ -4,8 +4,9 @@
   bottom: 2rem;
   right: 0.5rem;
   z-index: 1;
-  width: 7.5vw;
-  height: 7.5vh;
+  width: 3.5vw;
+  height: auto;
+  flex-direction: column-reverse;
 }
 
 .whatsappBotaoFlutuante img {
@@ -30,7 +31,7 @@
   }
 }
 
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 768px) {
   .whatsappBotaoFlutuante {
     width: 14vw;
     height: 14vh;

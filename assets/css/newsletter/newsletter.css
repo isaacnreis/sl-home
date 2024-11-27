@@ -1,6 +1,11 @@
 .newsletter {
-  background: linear-gradient(0deg, rgba(33, 41, 105, 0.45) 0%, rgba(33, 41, 105, 0.45) 100%), url("../../img/bgNew.jpeg"), lightgray 50% / contain no-repeat;
+  background: linear-gradient(
+      0deg,
+      rgba(33, 41, 105, 0.45) 0%,
+      rgba(33, 41, 105, 0.45) 100%
+    ),
+    url("../../img/bgNew.jpeg"), lightgray 50% / contain no-repeat;
   color: var(--var-cor-branco);
   text-align: center;
-  padding: 2rem;
+  padding: 4rem 0;
 }

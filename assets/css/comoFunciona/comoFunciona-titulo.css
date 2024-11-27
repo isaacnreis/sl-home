@@ -1,0 +1,13 @@
+.comoFunciona__titulo {
+  color: var(--var-cor-branco);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 560px) {
+  .comoFunciona__titulo {
+    color: var(--var-cor-branco);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}

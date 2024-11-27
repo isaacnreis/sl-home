@@ -1,32 +1,25 @@
 .links__titulo {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-style: normal;
-  font-weight: 700;
-  line-height: normal; 
+  font-weight: 500;
+  line-height: normal;
 }
 
 @media screen and (max-width: 1290px) {
   .links__titulo {
-    font-size: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {  
-  .links__titulo {
-    font-weight: 500;
+    font-size: 1.25rem;
   }
 }
 
 @media screen and (max-width: 900px) {
   .links__titulo {
-    font-size: 1.25rem;
-    font-weight: 500;
+    font-size: 1.2rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .links__titulo {
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 400;
   }
 }
