@@ -289,6 +289,10 @@
       rel="stylesheet"
       href="./assets/css/modalSimuladorResultado/modalSimuladorResultado.css"
     />
+    <link
+      rel="stylesheet"
+      href="./assets/css/modalStatusEnvioForm/modalStatusEnvioForm.css"
+    />
   </head>
   <body>
     <header class="cabecalho container" id="cabecalho">
@@ -381,7 +385,11 @@
             Descubra como reduzir até 95% na sua conta de luz com energia solar
             fotovoltaica
           </p>
-          <button class="botao banner__botao" id="send-whatsapp">
+          <button
+            class="botao banner__botao send-whatsapp"
+            data-phone="5531993600722"
+            data-message="Olá, gostaria de mais informações sobre o seu produto."
+          >
             Quero fazer uma cotação
           </button>
         </footer>
@@ -470,7 +478,13 @@
               <li class="servico__item">Projeto fotovoltaico</li>
               <li class="servico__item">Homologação na cemig</li>
             </ul>
-            <button class="botao servico__botao">Faça seu orçamento</button>
+            <button
+              class="botao servico__botao send-whatsapp"
+              data-phone="5531993600722"
+              data-message="Olá, gostaria de mais informações sobre o seu produto. O serviço de Projeto e homologação."
+            >
+              Faça seu orçamento
+            </button>
           </article>
           <article class="servico">
             <div class="servico__img servico__img--INS"></div>
@@ -479,7 +493,13 @@
               <li class="servico__item">Instalação elétrica</li>
               <li class="servico__item">Instalação fotovoltaica</li>
             </ul>
-            <button class="botao servico__botao">Faça seu orçamento</button>
+            <button
+              class="botao servico__botao send-whatsapp"
+              data-phone="5531993600722"
+              data-message="Olá, gostaria de mais informações sobre o seu produto. O serviço de Instalação."
+            >
+              Faça seu orçamento
+            </button>
           </article>
           <article class="servico">
             <div class="servico__img servico__img--OP"></div>
@@ -490,7 +510,13 @@
               <li class="servico__item">Limpeza</li>
               <li class="servico__item">Manutenção</li>
             </ul>
-            <button class="botao servico__botao">Faça seu orçamento</button>
+            <button
+              class="botao servico__botao send-whatsapp"
+              data-phone="5531993600722"
+              data-message="Olá, gostaria de mais informações sobre o seu produto. O serviço de Operação e Manutenção."
+            >
+              Faça seu orçamento
+            </button>
           </article>
         </div>
       </section>
@@ -648,7 +674,7 @@
               required
             />
           </div>
-          <div class="simulador__input">
+          <!-- <div class="simulador__input">
             <label for="emailSimulador" class="simulador__label">Email</label>
             <input
               type="email"
@@ -656,7 +682,7 @@
               placeholder="Email"
               required
             />
-          </div>
+          </div> -->
           <p class="simulador__termos">
             Ao informar os meus dados, concordo com os termos de Politica de
             Privacidade
@@ -723,16 +749,40 @@
                 Não solucionou sua dúvida?
               </h3>
             </div>
-            <form class="duvidas__form">
-              <input type="text" placeholder="Nome" required />
-              <input type="email" placeholder="Email" required />
+            <form
+              class="duvidas__form"
+              action="https://formsubmit.co/ajax/isaacreisn@gmail.com"
+              method="POST"
+              data-form-duvidas
+            >
+              <input
+                name="nomeDuvidas"
+                type="text"
+                placeholder="Nome"
+                required
+              />
+              <input
+                name="emailDuvidas"
+                type="email"
+                placeholder="Email"
+                required
+              />
               <input
                 type="tel"
+                name="telefoneDuvidas"
                 placeholder="Telefone (xx) x xxxx-xxxx"
                 required
               />
-              <textarea type="text" placeholder="Mensagem"></textarea>
-              <button type="submit" class="botao duvidas__botaoForm">
+              <textarea
+                name="mensagemDuvidas"
+                type="text"
+                placeholder="Mensagem"
+              ></textarea>
+              <button
+                type="submit"
+                class="botao duvidas__botaoForm"
+                data-button-duvidas
+              >
                 Enviar
               </button>
             </form>
@@ -775,16 +825,42 @@
             Inscreva-se para receber novidades.
           </p>
         </div>
-        <form class="newsletter__form">
-          <input type="text" placeholder="Nome" />
-          <input type="email" placeholder="Email" />
-          <button type="submit" class="botao newsletter__botao">Enviar</button>
+        <form
+          class="newsletter__form"
+          action="https://formsubmit.co/ajax/isaacreisn@gmail.com"
+          method="POST"
+          data-form-newsletter
+        >
+          <input
+            name="nomeNewsletter"
+            type="text"
+            placeholder="Nome"
+            required
+          />
+          <input
+            name="emailNewsletter"
+            type="email"
+            placeholder="Email"
+            required
+          />
+          <button
+            type="submit"
+            class="botao newsletter__botao"
+            data-button-newsletter
+          >
+            Enviar
+          </button>
         </form>
       </section>
 
       <section class="orcamento container">
         <h2 class="tituloH2 orcamento__titulo">Solicite um orçamento</h2>
-        <form class="orcamento__form">
+        <form
+          class="orcamento__form"
+          action="https://formsubmit.co/ajax/isaacreisn@gmail.com"
+          method="POST"
+          data-form-orcamento
+        >
           <div class="orcamento__formInputContainer">
             <input
               type="text"
@@ -835,7 +911,13 @@
             rows="10"
             placeholder="Comentários"
           ></textarea>
-          <button type="submit" class="botao orcamento__botao">Enviar</button>
+          <button
+            type="submit"
+            class="botao orcamento__botao"
+            data-button-orcamento
+          >
+            Enviar
+          </button>
         </form>
       </section>
     </main>
@@ -990,6 +1072,8 @@
         >
       </section>
     </div>
+
+    <div class="modalStatusEnvioForm" data-modalStatus></div>
 
     <!-- Meu JS -->
     <script src="./assets/js/script.js"></script>

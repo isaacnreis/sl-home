@@ -1,0 +1,139 @@
+.modalStatusEnvioForm {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.607);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modalStatusEnvioFormContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+
+  background: var(--var-cor-azul);
+  border-radius: 1.25rem;
+  color: var(--var-cor-branco);
+  width: 40vw;
+  height: 50vh;
+  padding: 2rem;
+}
+
+.modalStatusEnvioForm__textos {
+  width: 100%;
+}
+
+.modalStatusEnvioForm__textos h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.modalStatusEnvioForm__texto {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.modalStatusEnvioForm__texto h2 {
+  font-size: 1.25rem;
+}
+
+.modalStatusEnvioForm__texto h3 {
+  color: green;
+  font-size: 2rem;
+  position: relative;
+  opacity: 1;
+  animation: baixo 2s;
+}
+
+@keyframes baixo {
+  0% {
+    top: -20vh;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.fecharModalStatusEnvioForm {
+  background: var(--var-cor-amarelo);
+  border: none;
+  border-radius: 4rem;
+  cursor: pointer;
+  width: 5rem;
+  position: absolute;
+  top: 2vh;
+  right: 2vw;
+}
+
+.fecharModalStatusEnvioForm img {
+  width: 100%;
+  stroke: var(--var-cor-azul);
+}
+
+@media screen and (max-width: 1024px) {
+  .fecharModalStatusEnvioForm {
+    width: 4rem;
+    top: 2vh;
+    right: 2vw;
+  }
+
+  .modalStatusEnvioFormContainer {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fecharModalStatusEnvioForm {
+    width: 3.5rem;
+    top: 2vh;
+    right: 2vw;
+  }
+
+  .modalStatusEnvioFormContainer {
+    width: 90vw;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .fecharModalStatusEnvioForm {
+    width: 3rem;
+    top: 2vh;
+    right: 2vw;
+  }
+
+  .modalStatusEnvioForm__textos h1,
+  .modalStatusEnvioForm__textos h2 {
+    font-size: 1rem;
+  }
+
+  .modalStatusEnvioForm__textos h3 {
+    font-size: 1.5rem;
+  }
+
+  .modalStatusEnvioForm__botao {
+    font-size: 0.825rem;
+  }
+}
+
+.modalStatusEnvioForm__icone {
+  align-self: center;
+  width: 4rem;
+}
+
+.modalStatusEnvioForm__botao {
+  align-self: center;
+  text-align: center;
+}

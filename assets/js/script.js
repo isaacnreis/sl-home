@@ -59,7 +59,6 @@ async function chamaDepoimentos() {
     });
   });
 
-  // Altera os depoimentos a cada 30 segundos
   setInterval(() => {
     contadorDepoimento++;
     if (depoimentos.length <= contadorDepoimento) contadorDepoimento = 0;
@@ -81,7 +80,6 @@ setaEsquerda.addEventListener("click", () => {
   mensagemDepoimento.innerHTML =
     '"' + depoimentos[contadorDepoimento].mensagem + '"';
   nomeDepoimento.innerHTML = depoimentos[contadorDepoimento].nome;
-  console.log("seta esquerda");
 });
 
 setaDireita.addEventListener("click", () => {
@@ -93,7 +91,6 @@ setaDireita.addEventListener("click", () => {
   mensagemDepoimento.innerHTML =
     '"' + depoimentos[contadorDepoimento].mensagem + '"';
   nomeDepoimento.innerHTML = depoimentos[contadorDepoimento].nome;
-  console.log("seta direita");
 });
 
 fecharModalProjetos.addEventListener("click", () => {
@@ -132,7 +129,6 @@ async function chamaProjetos() {
               quantImagens = projeto.imagens.length;
 
               modalProjetosImagem.innerHTML = `<img src="${projeto.imagem}" alt="Imagem do projeto">`;
-              // Passa as imagens dos projetos automaticamnete a cada 30 segundos
               intervalId = setInterval(() => {
                 modalProjetosImagem.innerHTML = `<img src="${projeto.imagens[contImagem]}" alt="Imagem do projeto">`;
                 contImagem++;
@@ -166,7 +162,6 @@ setaEsquerdaModalProjetos.addEventListener("click", () => {
   }
 
   alteraProjeto();
-  console.log("seta esquerda");
 });
 
 setaDireitaModalProjetos.addEventListener("click", () => {
@@ -177,7 +172,6 @@ setaDireitaModalProjetos.addEventListener("click", () => {
   }
 
   alteraProjeto();
-  console.log("seta direita");
 });
 
 // Funções para seção Simulador
@@ -221,9 +215,7 @@ taxaIluminacao.addEventListener("input", () => {
   });
 });
 
-formSimulador.addEventListener("submit", (evento) => {
-  evento.preventDefault();
-
+formSimulador.addEventListener("submit", () => {
   // Valore fornecidos pelo cliente
   //   Valor pago atualmente : valorPago
   //   Taxa de iluminação publica : taxaIluminacao
@@ -305,12 +297,179 @@ fecharModalResultadoSimulador.addEventListener("click", () => {
 });
 
 // Botão Quero Fazer Uma Cotação
-document.getElementById("send-whatsapp").addEventListener("click", function () {
-  const phoneNumber = "5531993600722";
-  const message = encodeURIComponent(
-    "Olá, gostaria de mais informações sobre o seu produto."
-  );
-
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
-  window.open(whatsappUrl, "_blank");
+document.querySelectorAll(".send-whatsapp").forEach((button) => {
+  button.addEventListener("click", function () {
+    const phoneNumber = this.getAttribute("data-phone");
+    const message = encodeURIComponent(this.getAttribute("data-message"));
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(whatsappUrl, "_blank");
+  });
 });
+
+// Configurações para os formularios
+class FormSubmit {
+  constructor(settings) {
+    this.settings = settings;
+    this.form = document.querySelector(settings.form);
+    this.formButton = document.querySelector(settings.button);
+    this.modalStatus = document.querySelector(settings.modalStatus);
+    if (this.form) {
+      this.url = this.form.getAttribute("action");
+    }
+    this.sendForm = this.sendForm.bind(this);
+  }
+
+  displaySuccess(event) {
+    const successHtml = this.getHtmlResponse(true);
+
+    this.modalStatus.style.display = "flex";
+    this.modalStatus.innerHTML = successHtml;
+
+    const fecharModalStatusEnvioForm = document.querySelector(
+      ".fecharModalStatusEnvioForm"
+    );
+    fecharModalStatusEnvioForm.addEventListener("click", () => {
+      this.modalStatus.style.display = "none";
+    });
+
+    this.form.reset();
+
+    event.target.disabled = false;
+    event.target.innerText = "Enviar";
+  }
+
+  displayError(event) {
+    const errorHtml = this.getHtmlResponse(false);
+
+    this.modalStatus.style.display = "flex";
+    this.modalStatus.innerHTML = errorHtml;
+
+    const fecharModalStatusEnvioForm = document.querySelector(
+      ".fecharModalStatusEnvioForm"
+    );
+    fecharModalStatusEnvioForm.addEventListener("click", () => {
+      this.modalStatus.style.display = "none";
+    });
+
+    event.target.disabled = false;
+    event.target.innerText = "Enviar";
+  }
+
+  getHtmlResponse(success) {
+    const responseHtml = `
+      <section class="modalStatusEnvioFormContainer">
+        <button class="fecharModalStatusEnvioForm">
+          <img src="./assets/img/close.svg" alt="botão para fechar modal" />
+        </button>
+
+        <img
+          src="./assets/img/energySun.svg"
+          alt="ícone de um sol"
+          class="modalStatusEnvioForm__icone"
+        />
+
+        <div
+          class="modalStatusEnvioForm__textos"
+          id="modalStatusEnvioForm__textos"
+        >
+          <h1>
+            ${
+              success
+                ? "Mensagem enviada com sucesso!"
+                : "Houve um erro ao tentar enviar o formulário. Tente novamente mais tarde ou entre em contato pelo nosso número do whatsapp."
+            }
+          </h1>
+        </div>
+
+        <a
+          href="https://wa.me/5531993600722"
+          target="_blank"
+          class="botao modalStatusEnvioForm__botao"
+          >Entre em contato pelo Whatsapp</a
+        >
+      </section>
+    `;
+    return responseHtml;
+  }
+
+  getFormObject() {
+    const formObject = {};
+    const fields = this.form.querySelectorAll("[name]");
+    fields.forEach((field) => {
+      formObject[field.getAttribute("name")] = field.value;
+    });
+    return formObject;
+  }
+
+  onSubmission(event) {
+    event.preventDefault();
+    event.target.disabled = true;
+    event.target.innerText = "Enviando...";
+  }
+
+  checkFieldsSubmission() {
+    const fields = this.getFormObject();
+    let bool = true;
+    // if (fields.nomeOrcamento == "" || !fields.nomeOrcamento) {
+    //   bool = false;
+    // } else if (
+    //   fields.emailOrcamento == "" ||
+    //   !fields.emailOrcamento ||
+    //   !fields.emailOrcamento.includes("@")
+    // ) {
+    //   bool = false;
+    // } else if (
+    //   fields.comentatiosOrcamento == "" ||
+    //   !fields.comentatiosOrcamento
+    // ) {
+    //   bool = false;
+    // }
+    return bool;
+  }
+
+  async sendForm(event) {
+    try {
+      if (this.checkFieldsSubmission()) {
+        this.onSubmission(event);
+        await fetch(this.url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(this.getFormObject()),
+        });
+        this.displaySuccess(event);
+      }
+    } catch (error) {
+      this.displayError(event);
+      throw new Error(error);
+    }
+  }
+
+  init() {
+    if (this.form) this.formButton.addEventListener("click", this.sendForm);
+    return this;
+  }
+}
+
+const formSubmitOrcamento = new FormSubmit({
+  form: "[data-form-orcamento]",
+  button: "[data-button-orcamento]",
+  modalStatus: "[data-modalStatus]",
+});
+formSubmitOrcamento.init();
+
+const formSubmitDuvidas = new FormSubmit({
+  form: "[data-form-duvidas]",
+  button: "[data-button-duvidas]",
+  modalStatus: "[data-modalStatus]",
+});
+formSubmitDuvidas.init();
+
+const formSubmitNewsletter = new FormSubmit({
+  form: "[data-form-newsletter]",
+  button: "[data-button-newsletter]",
+  modalStatus: "[data-modalStatus]",
+});
+formSubmitNewsletter.init();
